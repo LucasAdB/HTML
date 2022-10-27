@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<!-- <head>this is a heading -->
+<title>
+Introdução a JavaScript
+</title>
+<script type="text/javascript">
+<!-- function captura(){ -->
+<!-- var info = document.getElementById("textinput").value; -->
+<!-- alert("Você digitou: "+info); -->
+<!-- } -->
+function calcular(){
+var num1 = document.querySelector(".num1").value;
+var num2 = document.querySelector(".num2").value;
+var resultado = parseInt(num1)+parseInt(num2);
+document.querySelector(".resultado").innerHTML = resultado;
+}
+
+
+</script>
+
+</head>
+<body>
+Primeiro valor:
+<input class ="num1" type="text"><br>
+Segundo valor:
+<input class= "num2" type="number"><br>
+
+<button onclick ="calcular()"> Resultado</button>
+<p class = "resultado"></p>
+<!-- <input id="textinput" name="textinput" value="" type="text">
+<button onclick ="captura()"> confirmar</button> -->
+
+
+</body>
+</html>
